@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="_99445b7b-f966-4c58-ab6c-33575d0249b2-removebg-preview.png">
+    <title> NewsMania </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav flex container">
+            <a onclick="reload()" href="#" class="company-logo">
+                <img src="_99445b7b-f966-4c58-ab6c-33575d0249b2-removebg-preview.png" alt="Companylogo" id="news-img">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-items hover-link" id="euro" onclick="onNavItemClick('euro')">EURO</li>
+                    <li class="nav-items hover-link" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="nav-items hover-link" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="news-input" placeholder="Eg. Copa America">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus dolor eligendi reprehenderit consequatur recusandae numquam quam necessitatibus hic
+                    repellat qui?</p>
+            </div>
+        </div>
+
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
